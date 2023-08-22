@@ -1,0 +1,869 @@
+
+:root {
+    --primary-color: #800000;      /* Main color for headings and buttons */
+    --secondary-color: #ffd700;    /* Secondary color for accents */
+    --background-color: #f9f9f9;   /* Background color for sections */
+    --text-color: #333;            /* Text color */
+    --footer-color: #555;          /* Footer text color */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Showcase section styles */
+.showcase {
+    position: relative;
+    height: 100vh;
+    background-image: url('images/5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,);
+    z-index: -1;
+    
+}
+
+.showcase-content {
+    z-index: 1;
+}
+
+.showcase h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #800000;
+}
+
+.showcase p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #800000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5e0000;
+}
+
+/* Other sections and footer styles */
+/* ... Add styles for other sections and footer ... */
+
+
+
+/* about section  */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* end of about section */
+
+
+/* programs sections */
+
+.programs-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.program-card {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.program-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.program-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.program-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.program-card .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #800000;
+    color: #eee;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.program-card .btn:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+
+
+/* end of programs section  */
+
+/* sponsors section */
+
+.sponsors-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.sponsor-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.sponsor-carousel img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 0 1rem;
+}
+
+.sponsor-carousel img:hover {
+    transition: 300ms;
+    scale: 1.2;
+}
+/* end of sponsors section */
+
+/* blog section */
+.blog-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.blog-post {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-post h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.blog-post .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ffd700;
+    color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.blog-post .btn:hover {
+    background-color: #e6b800;
+}
+
+/* end of blog section */
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #800000;
+}
+
+/* end of footer */
+
+
+/* Membership Form Styles */
+.membership-form {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.membership-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Use your primary color */
+}
+
+.membership-form p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#join-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#join-form label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+#join-form input[type="text"],
+#join-form input[type="email"],
+#join-form input[type="date"],
+#join-form select,
+#join-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#join-form select {
+    appearance: none;
+    padding-right: 30px;
+    background-image: url('down-arrow.png'); /* Customize with your icon */
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+#join-form textarea {
+    resize: vertical;
+}
+
+#join-form .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#join-form .btn:hover {
+    background-color: var(--secondary-color); /* Use your secondary color */
+    color: #333;
+}
+
+/* Responsiveness for the form */
+@media (max-width: 768px) {
+    #join-form {
+        padding: 0 1rem;
+    }
+}
+
+
+
+
+
+/* Styles for the Elite Team Page */
+.elite-about {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.elite-about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Use your primary color */
+}
+
+.elite-about p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.elite-about ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.coach-bio {
+    padding: 4rem 0;
+}
+
+.coach-info {
+    text-align: center;
+}
+
+.coach-info img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.coach-info p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.team-roster {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.team-roster h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Use your primary color */
+}
+
+.team-roster ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.team-roster li {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsiveness for the page */
+@media (max-width: 768px) {
+    .elite-about,
+    .coach-bio,
+    .team-roster {
+        padding: 2rem 0;
+    }
+    .elite-about h2,
+    .coach-bio h2,
+    .team-roster h2 {
+        font-size: 2rem;
+    }
+    .coach-info img {
+        max-width: 150px;
+    }
+}
+/* Styles for the Team Roster */
+.team-roster {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.team-roster h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color); /* Use your primary color */
+    text-align: center;
+}
+
+.roster-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: start;
+    text-align: center;
+}
+
+.roster-member {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Apply the lifting effect on hover */
+.roster-member:hover {
+    
+    transform: translateY(-5px); /* Adjust the value to control the lift height */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a slight shadow */
+}
+
+.roster-member img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.roster-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color); /* Use your primary color */
+}
+
+.roster-member p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Responsiveness for the page */
+@media (max-width: 768px) {
+    .roster-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .roster-member {
+        padding: 1.5rem;
+    }
+    .roster-member h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Styles for the Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/* Styles for Volunteer Page */
+
+/* Volunteer Intro Section */
+.volunteer-intro {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.volunteer-intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Volunteer Opportunities Section */
+.volunteer-opportunities {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.volunteer-opportunities h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.volunteer-opportunities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.volunteer-opportunities li {
+    margin-bottom: 1.5rem;
+}
+
+.volunteer-opportunities h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Volunteer Form Section */
+.volunteer-form {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+}
+
+.volunteer-form h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.volunteer-form p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.volunteer-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.volunteer-form label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.volunteer-form input[type="text"],
+.volunteer-form input[type="email"],
+.volunteer-form input[type="tel"],
+.volunteer-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.volunteer-form textarea {
+    resize: vertical;
+}
+
+.volunteer-form button[type="submit"] {
+    background-color: #ffd700;
+    color: #333;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volunteer-form button[type="submit"]:hover {
+    background-color: #e6b800;
+}
+
+
+        /* Parallax Background */
+        .parallax-bg {
+            background-image: url('images/6.jpg'); /* Replace with your background image URL */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto; /* Adjust as needed */
+            position: relative;
+        }
+
+        /* Dark Overlay for Text Readability */
+        .parallax-overlay {
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .parallax-content {
+            color: #333;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .parallax-content h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+
+
+
+
+
+        /* Styles for Race Cards */
+
+.race-cards {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Race Card Styles */
+.race-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.race-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.race-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.race-info {
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+/* Training Page Styles */
+
+.training-content {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Training Program Cards */
+.training-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Training Program Card Styles */
+.training-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.training-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.training-card p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.training-card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #eee;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.training-cards a:hover {
+    background-color: #ffd700;
+    color: #333;
+}

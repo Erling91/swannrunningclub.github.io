@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+    <!-- Include your stylesheet here -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/white_swann.png" alt="Swann Running Club Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="#races">Races</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+            </ul>
+            <!-- <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div> -->
+        </nav>
+        <!-- Navigation bar and logo (you can reuse your existing header code) -->
+    </header>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <section class="volunteer-intro">
+        <div class="container">
+            <h2>Volunteer with Swann Running Club</h2>
+            <p>We appreciate your interest in volunteering with us. Your support is invaluable in helping us achieve our mission and provide a positive experience for our members and athletes.</p>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <section class="volunteer-opportunities parallax-bg">
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content">
+            <h3>Volunteer Opportunities</h3>
+            <p>Explore our current volunteer opportunities below:</p>
+            
+            <ul>
+                <li>
+                    <h4>Event Volunteers</h4>
+                    <p>Help us organize and manage running events, races, and camps.</p>
+                </li>
+                <li>
+                    <h4>Coaching Assistants</h4>
+                    <p>Assist our coaches during training sessions and provide support to our athletes.</p>
+                </li>
+                <!-- Add more volunteer opportunities as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section class="volunteer-form">
+        <div class="container">
+            <h3>Volunteer Sign-Up</h3>
+            <p>If you're interested in volunteering with us, please fill out the form below, and we'll get in touch with you:</p>
+            
+            <form action="volunteer-submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter phone number" required>
+                
+                <label for="message">Message (optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <!-- Footer content goes here -->
+        <div class="container">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: info@swannrunningclub.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#about">About Us</a>
+                <a href="#programs">Programs</a>
+                <!-- Add more links as needed -->
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script> <!-- Include your JavaScript file if needed -->
+</body>
+</html>
